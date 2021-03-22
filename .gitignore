@@ -2,3 +2,4 @@
 lib/
 .idea/
 __pycache__/
+log.txt
