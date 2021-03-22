@@ -32,6 +32,8 @@ class HAAApi:
             text = response.text.strip()
             if text and (text.startswith("{") or text.startswith("[")):
                 result["text"] = json.loads(text)
+            else:
+                result["text"] = text
         return result
 
     def call_api(self, method, url_params=None):
@@ -51,4 +53,4 @@ class HAAApi:
         # call API
         result = self.call_api("admin_api_get_request_count", [haa_api_root, method])
         # when successful, get the count
-        return result["text"]["RequestCount"]
+        return int(result["text"])

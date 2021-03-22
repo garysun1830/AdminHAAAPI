@@ -13,8 +13,11 @@ log = AppLogger(app_config, "log.txt")
 job = HAAApiService(app_config, log)
 # test for "LookupName" API method
 # the return count should be greater than 0
-count = job.request_api_count("LookupName")
-if count > 0:
-    print("Passed!")
-else:
+try:
+    count = job.request_api_count("LookupName")
+    if count > 0:
+        print("Passed!")
+    else:
+        print("Failed!")
+except:
     print("Failed!")

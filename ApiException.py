@@ -1,7 +1,7 @@
 import json
 
 
-class APIException(Exception):
+class APIException(BaseException):
     """customized Exception for API calls"""
 
     def __init__(self, url, response):
