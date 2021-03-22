@@ -1,6 +1,6 @@
 {
   "haa_api_root": "https://openmaps.gov.bc.ca/geo/pub/ows",
-  "admin_api_root_2": "http://84521.ddns.net/dev.HAAApi/api/haa/",
-  "admin_api_root": "http://localhost:57021/api/haa/",
+  "admin_api_root": "http://84521.ddns.net/dev.HAAApi/api/haa/",
+  "admin_api_root_1": "http://localhost:57021/api/haa/",
   "admin_api_get_request_count": "RequestCount/%s/%s"
 }
